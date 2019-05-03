@@ -1,16 +1,9 @@
 {
-  "name": "ruby",
+  "name": "tyr-lanfing",
   "version": "1.0.0",
-  "description": "Ruby Template",
-  "author": "Pasquale Vitiello <pasqualevitiello@gmail.com>",
+  "description": "Made with Switch Template by Pasquale Vitiello",
+  "author": "Rob Herley",
   "license": "GPLv3",
-  "repository": {
-    "type": "git",
-    "url": "https://bitbucket.org/pasqualevitiello/ruby.git"
-  },
-  "bugs": {
-    "url": "https://bitbucket.org/pasqualevitiello/ruby/issues"
-  },
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
@@ -19,7 +12,7 @@
     "lint-scss": "stylelint src/scss/*.scss --syntax scss || true",
     "uglify": "mkdirp dist/js -p && uglifyjs src/js/*.js -m -c -o dist/js/main.min.js",
     "imagemin": "imagemin src/images/* -o dist/images",
-    "serve": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
+    "serve": "browser-sync start --server --files \"src/**/*\"",
     "build:css": "run-s lint-scss scss autoprefixer",
     "build:js": "run-s lint uglify",
     "build:images": "run-s imagemin",
@@ -48,7 +41,5 @@
     "rimraf": "^2.5.4",
     "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
-  },
-  "homepage": "https://bitbucket.org/pasqualevitiello/ruby#readme",
-  "main": ".eslintrc.js"
+  }
 }

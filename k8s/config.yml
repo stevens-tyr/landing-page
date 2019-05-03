@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: landing-page
+  labels:
+    app: landing-page
+spec:
+  selector:
+    matchLabels:
+      app: landing-page
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: landing-page
+    spec:
+      containers:
+      - name: overcast
+        image: robherley/tyr-landing:1
+        imagePullPolicy: "Always"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: landing-page-svc
+spec:
+  selector:
+    app: landing-page
+  type: NodePort
+  ports:
+    - port: 80
+      nodePort: 32225

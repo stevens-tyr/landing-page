@@ -1,282 +1,241 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tyr</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Playfair+Display:700" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
-</head>
-<body class="is-boxed has-animations">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/safari-pinned-tab.svg"
+      color="#8452da"
+    />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#8452da" />
+    <meta name="msapplication-config" content="/assets/browserconfig.xml" />
+    <meta name="theme-color" content="#8452da" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+  <body class="is-boxed has-animations lights-off">
     <div class="body-wrap boxed-container">
-        <header class="site-header text-light">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="#">
-								<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
-                            </a>
-                        </h1>
-                    </div>
-                </div>
+      <header class="site-header">
+        <div class="container">
+          <div class="site-header-inner">
+            <div class="brand header-brand">
+              <h1 class="m-0">
+                <a href="https://tyr.tools">
+                  <img
+                    class="header-logo-image asset-dark"
+                    src="dist/images/logo-dark.svg"
+                    alt="Logo"
+                  />
+                </a>
+              </h1>
             </div>
-        </header>
+          </div>
+        </div>
+      </header>
 
-        <main>
-            <section class="hero text-center text-light">
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-inner">
+              <div class="hero-copy">
+                <h1 class="hero-title mt-0">
+                  Highly Scalable Platform For Automated Program Grading
+                </h1>
+                <p class="hero-paragraph">
+                  Tyr helps educators assess student programming assignments in
+                  a scalable, sandboxed testing environment.
+                </p>
+                <div class="hero-cta">
+                  <a class="button button-primary" href="https://app.tyr.tools"
+                    >Try Now</a
+                  >
+                </div>
+              </div>
+              <div class="hero-media">
+                <div class="header-illustration">
+                  <img
+                    class="header-illustration-image asset-dark"
+                    src="dist/images/header-illustration-dark.svg"
+                    alt="Header illustration"
+                  />
+                </div>
+                <div class="hero-media-illustration">
+                  <img
+                    class="hero-media-illustration-image asset-dark"
+                    src="dist/images/hero-media-illustration-dark.svg"
+                    alt="Hero media illustration"
+                  />
+                </div>
+                <div class="hero-media-container">
+                  <img
+                    class="hero-media-image asset-dark"
+                    src="dist/images/hero-media-dark.svg"
+                    alt="Hero media"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features section">
+          <div class="container">
+            <div class="features-inner section-inner has-bottom-divider">
+              <div class="features-header text-center">
                 <div class="container-sm">
-                    <div class="hero-inner">
-						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Save hours of your time grading</h1>
-	                        <p class="hero-paragraph">Tyr is a scalable assignment grader that helps you to grade assignments accurately and effortlessly. We can offload your time grading so you can focus on helping students.</p>
-	                        <div class="hero-cta">
-								<a class="button button-primary button-wide-mobile" href="#">Start here</a>
-							</div>
-						</div>
-                    </div>
+                  <h2 class="section-title mt-0">
+                    All-in-One Grading Platform
+                  </h2>
+                  <p class="section-paragraph">
+                    Tyr differentiates itself from other grading services with
+                    its complex management of ephermal single-use containers,
+                    provided by Kubernetes.
+                  </p>
+                  <div class="features-image">
+                    <img
+                      class="features-illustration asset-dark"
+                      src="dist/images/features-illustration-dark.svg"
+                      alt="Feature illustration"
+                    />
+                    <img
+                      class="features-box asset-dark"
+                      src="dist/images/features-box-dark.svg"
+                      alt="Feature box"
+                    />
+                    <img
+                      class="features-illustration asset-dark"
+                      src="dist/images/features-illustration-top-dark.svg"
+                      alt="Feature illustration top"
+                    />
+                  </div>
                 </div>
-            </section>
-
-            <section class="features section">
-                <div class="container">
-					<div class="features-inner section-inner has-bottom-divider">
-						<div class="features-header text-center">
-							<div class="container-sm">
-								<h2 class="section-title mt-0 is-revealing">Built using Kubernetes</h2>
-								<img class="features-illustration is-revealing" src="dist/images/features-illustration.svg" alt="Features illustration">
-							</div>
-                        </div>
-                        <div class="features-wrap">
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon mb-16">
-										<img src="dist/images/feature-01.svg" alt="Feature 01">
-                                    </div>
-									<div class="feature-content">
-                                    	<h4 class="feature-title mt-0 mb-8">Flexible</h4>
-                                    	<p class="text-sm mb-0">Set up Tyr grading servers either on the cloud or host them yourself. Tyr allows you to host it however you want.</p>
-									</div>
-								</div>
-                            </div>
-							<div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon mb-16">
-										<img src="dist/images/feature-02.svg" alt="Feature 02">
-                                    </div>
-									<div class="feature-content">
-                                    	<h4 class="feature-title mt-0 mb-8">Fault Tolerant</h4>
-                                    	<p class="text-sm mb-0">Worried about faulty code bringing down our test server? It won't happen because Tyr uses Kubernetes which, by design, will provide a robust architect that is resistant to total failure.</p>
-									</div>
-								</div>
-                            </div>
-						</div>
-						<div class="features-wrap">
-							<div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon mb-16">
-										<img src="dist/images/feature-03.svg" alt="Feature 03">
-                                    </div>
-									<div class="feature-content">
-                                    	<h4 class="feature-title mt-0 mb-8">Instant Feedback</h4>
-                                    	<p class="text-sm mb-0">Facilitate learning by enabling instant feedback on homeworks. Students will better learn if they are able to ask questions about an assignment when it's still fresh in their heads.</p>
-									</div>
-								</div>
-                            </div>
-							<div class="feature text-center is-revealing">
-								<div class="feature-inner">
-									<div class="feature-icon mb-16">
-										<img src="dist/images/feature-04.svg" alt="Feature 04">
-									</div>
-									<div class="feature-content">
-										<h4 class="feature-title mt-0 mb-8">Something goes here</h4>
-										<p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design.</p>
-									</div>
-								</div>
-							</div>
-                        </div>
+              </div>
+              <div class="features-wrap">
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <img
+                        class="asset-dark"
+                        src="dist/images/feature-01-dark.svg"
+                        alt="Feature 01"
+                      />
                     </div>
-                </div>
-            </section>
-
-			<section class="features-extended section">
-                <div class="features-extended-inner section-inner">
-                    <div class="features-extended-header text-center">
-                        <div class="container-sm">
-                            <h2 class="section-title mt-0">Sections of Tyr</h2>
-                            <p class="section-paragraph">Maybe we should do some kind of display of the UI here.</p>
-                        </div>
+                    <div class="feature-content">
+                      <h3 class="feature-title mt-0">
+                        Fault Tolerance
+                      </h3>
+                      <p class="text-sm mb-0">
+                        Improper or malicious code is contained, and won't take
+                        down an entire server.
+                      </p>
                     </div>
-					<div class="features-extended-wrap">
-						<div class="container">
-							<div class="feature-extended">
-								<div class="feature-extended-image is-revealing">
-									<img src="dist/images/feature-extended-01.svg" alt="Feature extended 01">
-								</div>
-								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0">Section 1 of Design</h3>
-									<p class="mb-0">Put an image of finished app next to here.</p>
-								</div>
-							</div>
-							<div class="feature-extended">
-								<div class="feature-extended-image is-revealing">
-									<img src="dist/images/feature-extended-02.svg" alt="Feature extended 02">
-								</div>
-								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0">Same here</h3>
-									<p class="mb-0">You know the drill</p>
-								</div>
-							</div>
-							<div class="feature-extended">
-								<div class="feature-extended-image is-revealing">
-									<img src="dist/images/feature-extended-03.svg" alt="Feature extended 03">
-								</div>
-								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0">Freedom from designers</h3>
-									<p class="mb-0">Nisi porta lorem mollis aliquam ut. Ac tincidunt vitae semper quis lectus nulla at volutpat. Est ultricies integer quis auctor elit sed.</p>
-								</div>
-							</div>
-						</div>
-					</div>
+                  </div>
                 </div>
-            </section>
-
-			<section class="cta section text-light">
-				<div class="container">
-					<div class="cta-inner section-inner is-revealing">
-						<h3 class="section-title mt-0">What are you waiting for? Give Tyr a try today!</h3>
-						<div class="cta-cta">
-							<a class="button button-wide-mobile" href="#">Get started</a>
-						</div>
-					</div>
-				</div>
-			</section>
-        </main>
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="site-footer-inner">
-					<div class="site-footer-top">
-						<div class="site-footer-unit">
-							<div class="site-footer-unit-inner">
-								<div class="brand footer-brand mb-24">
-									<a href="#">
-										<img src="dist/images/logo.svg" alt="Logo">
-									</a>
-								</div>
-								<ul class="footer-social-links list-reset">
-									<li>
-										<a href="#">
-											<span class="screen-reader-text">Facebook</span>
-											<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-												<path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span class="screen-reader-text">Twitter</span>
-											<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-												<path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span class="screen-reader-text">Google</span>
-											<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-												<path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="site-footer-unit">
-							<div class="site-footer-unit-inner">
-								<div class="footer-top-links">
-									<div class="footer-title mb-16">Company</div>
-									<ul class="list-reset">
-										<li>
-											<a href="#">Dummy text used</a>
-										</li>
-										<li>
-											<a href="#">The purpose of lorem</a>
-										</li>
-										<li>
-											<a href="#">Filler text can be very useful</a>
-										</li>
-										<li>
-											<a href="#">Be on design</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="site-footer-unit">
-							<div class="site-footer-unit-inner">
-								<div class="footer-top-links">
-									<div class="footer-title mb-16">Use cases</div>
-									<ul class="list-reset">
-										<li>
-											<a href="#">Consectetur adipiscing</a>
-										</li>
-										<li>
-											<a href="#">Lorem Ipsum is place</a>
-										</li>
-										<li>
-											<a href="#">Excepteur sint</a>
-										</li>
-										<li>
-											<a href="#">Occaecat cupidatat</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="site-footer-unit">
-							<div class="site-footer-unit-inner">
-								<div class="footer-top-links">
-									<div class="footer-title mb-16">Docs</div>
-									<ul class="list-reset">
-										<li>
-											<a href="#">The purpose of lorem</a>
-										</li>
-										<li>
-											<a href="#">Dummy text used</a>
-										</li>
-										<li>
-											<a href="#">Excepteur sint</a>
-										</li>
-										<li>
-											<a href="#">Occaecat cupidatat</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="site-footer-bottom">
-						<ul class="footer-bottom-links list-reset">
-							<li>
-								<a href="#">Contact</a>
-							</li>
-							<li>
-								<a href="#">FAQ's</a>
-							</li>
-							<li>
-								<a href="#">Terms</a>
-							</li>
-						</ul>
-						<div class="footer-copyright">&copy; 2018 Ruby, all rights reserved</div>
-					</div>
-				</div>
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <img
+                        class="asset-dark"
+                        src="dist/images/feature-02-dark.svg"
+                        alt="Feature 02"
+                      />
+                    </div>
+                    <div class="feature-content">
+                      <h3 class="feature-title mt-0">
+                        Scalability
+                      </h3>
+                      <p class="text-sm mb-0">
+                        Kubernetes allows for seamless scale of app deployments
+                        and load-balancing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <img
+                        class="asset-dark"
+                        src="dist/images/feature-03-dark.svg"
+                        alt="Feature 03"
+                      />
+                    </div>
+                    <div class="feature-content">
+                      <h3 class="feature-title mt-0">
+                        Uniformity
+                      </h3>
+                      <p class="text-sm mb-0">
+                        Upon creation, every containerized environment will be
+                        identical. No more <i>"it runs fine on my machine"</i>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </section>
+
+        <section class="cta section">
+          <div class="container-sm">
+            <div class="cta-inner section-inner">
+              <div class="cta-header text-center">
+                <h2 class="section-title mt-0">
+                  Simple, Painless Assignment Management
+                </h2>
+                <p class="section-paragraph">
+                  Grading programming assignments at Stevens was a highly
+                  fragmented and convoluted process that inconveniences
+                  students, TAs, and professors alike. The platform provided by
+                  Tyr helps educators assess student programming assignments in
+                  a scalable, sandboxed testing environment. Utilizing Tyr,
+                  Professors define test cases within a sleek user interface
+                  that will automatically deploy containerized environments to
+                  run unit tests on student submissions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer has-top-divider">
+        <div class="container">
+          <div class="site-footer-inner">
+            <div class="footer-copyright">
+              2019 Tyr
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="dist/js/main.min.js"></script>
-</body>
+  </body>
 </html>

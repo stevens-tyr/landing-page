@@ -1,4 +1,4 @@
-# Ruby
+# Switch
 
 A landing page template.
 
